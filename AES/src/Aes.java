@@ -84,11 +84,11 @@ public class Aes {
         Aes aes = new Aes() ;
         System.out.println("Le bloc \"State\" en entrée vaut : ") ;
         aes.afficher_le_bloc(aes.State) ;
-        //aes.chiffrer() ;
+        aes.chiffrer() ;
         //aes.SubBytes();
         //aes.ShiftRows();
         //aes.MixColumns();
-        aes.AddRoundKey(16); //16 avec la grande clé, 0 avec la petite
+        //aes.AddRoundKey(16);
         System.out.println("Le bloc \"State\" en sortie vaut : ") ;
         aes.afficher_le_bloc(aes.State) ;
     }
